@@ -1,3 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+@keyframes colorCycle {
+    0%,55%{
+        filter: brightness(0) invert(1);
+    }   
+    11%, 33%{
+        filter: none;
+    }    
+}
+
+@keyframes colorCycleReverse {
+    0%{
+        filter: brightness(0) invert(1);
+        filter: none;
+    }
+    22%{
+        filter: brightness(0) invert(1);
+    } 
+    100%{
+        filter: brightness(0) invert(1);
+        filter: none;
+    }   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
 body{
     background:#0d1117;
+}
+
+a{
+    text-decoration: none;
+    color: #bdbdbd;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.wrapper{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.header{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_middle-ul{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    list-style: none;
+}
+
+a:-webkit-any-link:focus-visible {
+    outline:none;
+}
+
+.a-bold:hover{
+    transition: ease-in 0.27s;
+    font-weight: 700;
+}
+
+
+.container{
+    display: flex;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1{
+    text-align: -webkit-center;
+}
+
+#h1-span{
+    font-size: 5.0rem;
+    background: linear-gradient(to right, #0082ef 1%,#00cedd 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: brightness(0) invert(1);
+    animation: colorCycle 9s cubic-bezier(1,-0.04, 0.5, 0.91) infinite;
+    letter-spacing: -0.1rem;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 0.9rem;
+    background: linear-gradient(to right, #ff4d4d 1%,#f9cb29 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: brightness(0) invert(1);
+    animation: colorCycleReverse 9s cubic-bezier(0.21, -0.28, 0.5, 0.91)  infinite;
+}
+.header_rigth-img{
+    display: none;
 }
