@@ -106,3 +106,54 @@ a:-webkit-any-link:focus-visible {
 .header_rigth-img{
     display: none;
 }
+
+.section-one{
+    text-align: center;
+    color:white;
+    margin-top: 6em;
+}
+
+#section_one-p{
+    font-size: 0.65rem;
+    letter-spacing: 3.4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section_one-div{
+    height: 30em;
+    padding: 0px 5%;
+    margin-top: 4em;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    row-gap: 3em;
+}
+
+.section_one_div-works{
+    width: 16em;
+    height: 9em;
+    border-radius: 0.5em;
+    border: solid #c8c9ca 1.8px;
+    box-shadow: -10px 9px #c8c9ca;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.section_one_div_works_footer-title{
+    position: absolute;
+    margin-top: 6em;
+    margin-left: 1em;
+}
+
+.section_one_div_works_footer_title-subtitle{
+font-size: 9px;
+font-weight: 200;
+margin-left: 7px;
+}
