@@ -9,14 +9,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='src/css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='src/css/responsive-main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <h1 class="header-left"></h1>
 
-            <nav class="header-middle">
+            <nav class="header-middle" id="menu">
                 <ul class="header_middle-ul">
                     <li class="header_middle_ul-li"><a class="a-bold" href="#">Soluções</a></li>
                     <li class="header_middle_ul-li"><a class="a-bold" href="#">Contatos</a></li>
@@ -27,8 +26,8 @@
             </nav>
 
             <div class="header-right">
-                <img src="src/img/menu.svg" alt="Abrir Menu" class="header_rigth-img">
-                <img src="src/img/exit.svg" alt="Fechar Menu" class="header_rigth-img hide">
+                <img id="BTN_abrirMenu" src="src/img/menu.svg" alt="Abrir Menu" onclick="abrirMenu()" class="header_rigth-img">
+                <img id="BTN_fecharMenu" src="src/img/exit.svg" alt="Fechar Menu" onclick="fecharMenu()"class="header_rigth-img hide">
             </div>
 
         </header>
@@ -126,6 +125,6 @@
         </footer>
 
     </div>
-    
+    <script src='src/js/main.js'></script>
 </body>
 </html>
