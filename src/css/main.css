@@ -34,9 +34,6 @@ body{
 
 a{
     text-decoration: none;
-    color: #bdbdbd;
-    font-size: 0.8rem;
-    font-weight: 200;
 }
 
 .wrapper{
@@ -71,6 +68,11 @@ a:-webkit-any-link:focus-visible {
     font-weight: 700;
 }
 
+.a-bold{
+    color: #bdbdbd;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
 
 .container{
     display: flex;
@@ -134,17 +136,24 @@ a:-webkit-any-link:focus-visible {
     row-gap: 3em;
     height: max-content;
 }
+.link_section_one_div{
+    width: auto;
+    height: auto;
+}
 
 .section_one_div-works{
     width: 16em;
     height: 9em;
     border-radius: 0.5em;
     border: solid #c8c9ca 1.8px;
-    box-shadow: -10px 9px #c8c9ca;
-
+    box-shadow: inset 0em 0em 100px 10px #0d1117;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+.section_one_div-works:hover{
+    box-shadow: 1px 1px 20px 0px white;
+    color: black;
 }
 
 .section_one_div_works_footer-title{
@@ -156,11 +165,22 @@ a:-webkit-any-link:focus-visible {
 .section_one_div_works_footer_title-subtitle{
     font-size: 9px;
     font-weight: 200;
-    margin-left: 7px;
+    margin-left: 1px;
 }
 .footer{
     text-align: center;
     color: white;
     height: 20em;
     margin-top: 7em;
+}
+
+#projeto1{
+    background-image: url("../img/backgrounds/casco.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-one-a{
+    color: white;
 }
