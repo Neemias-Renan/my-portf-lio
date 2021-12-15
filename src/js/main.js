@@ -11,3 +11,17 @@ function fecharMenu(){
     document.getElementById("BTN_abrirMenu").style.display = "block"
     document.getElementById("body").style.overflow = "auto"
 }
+
+var projetoAtivo = ""
+
+function verProjeto(titulo){
+    projetoAtivo = titulo
+    document.getElementById(titulo).style.display = "flex"
+    console.log(projetoAtivo)
+}
+
+
+function trocarProjeto(){
+    document.getElementById(projetoAtivo).style.display = "none"
+}
+
