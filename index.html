@@ -18,9 +18,9 @@
             <nav class="header-middle" id="menu">
                 <ul class="header_middle-ul">
                     <li class="header_middle_ul-li"><a class="a-bold" href="index.html">Início</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="#">Quem sou eu?</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="#">Contato</a></li>
                     <li class="header_middle_ul-li"><a class="a-bold" href="#">Portfólio</a></li>
+                    <li class="header_middle_ul-li"><a class="a-bold" href="#">Quem sou Eu?</a></li>
+                    <li class="header_middle_ul-li"><a class="a-bold" href="#">Feedback</a></li>
                 </ul>
             </nav>
 
@@ -39,82 +39,72 @@
             </h1>
             <p class="description">DESENVOLVEDOR DE SOLUÇÕES WEB</p>
         </div>
+
         <section class="section-one">
             <p id="section_one-p">Conheça meus trabalhos</p>
 
-            <div class="section_one-div">
-                <a class="section-one" href="https://github.com/Neemias-Renan/projeto-casco">
-                    <div class="section_one_div-works" id="projeto1">
-                        <div class="section_one_div_works-main"></div>
-                        <div class="section_one_div_works-footer">
-                            <h3 class="section_one_div_works_footer-title">
-                                <span>Casco</span>
-                                <span class="section_one_div_works_footer_title-subtitle">Conservação de Tartarugas Marinhas</span>
-                            </h3>
+            <div id="section_one-firstdiv">
+                <div id="cards">
+                    <div class="cards_element background-blue" onmouseover="verProjeto('casco')" onmouseout="trocarProjeto()">
+                        <div class="cards_element-text">
+                            <h3 class="card_element-text-h3">Casco</h3>
+                            <p class="card_element-text-p">Site</p>
+                        </div>                        
+                    </div>
+
+                    <div class="cards_element background-red">
+                        <div class="cards_element-text">
+                            <h3 class="card_element-text-h3">Filminho</h3>
+                            <p class="card_element-text-p">Site</p>
+                        </div>                        
+                    </div>
+
+                    <div class="cards_element background-purple" onmouseover="verProjeto('focus')"  onmouseout="trocarProjeto()">
+                        <div class="cards_element-text">
+                            <h3 class="card_element-text-h3">Focus</h3>
+                            <p class="card_element-text-p">Site</p>
+                        </div>                        
+                    </div>
+
+                    <div class="cards_element background-green">
+                        <div class="cards_element-text">
+                            <h3 class="card_element-text-h3">Caixa de Mercadinho</h3>
+                            <p class="card_element-text-p">Site</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="section_one-seconddiv">
+
+                <section class="section_one-seconddiv-container" id="casco">
+                    <div class="section_one-seconddiv-div align-item-left">
+                        <div class="section_one-seconddiv-div-text ">
+                            <h1 class="section_one-seconddiv-div-text-h1">Casco - Conservação de Tartarugas Marinhas</h1>
+                            <p class="section_one-seconddiv-div-text-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao
+                            monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. O projeto é mantido pelo estudante
+                            Neemias Renan, orientado pelo Prof. Me. Pedro Baesse e originalmente desenvolvido no IFRN.</p>
                         </div>
                     </div>
-                </a>
-
-                <div class="section_one_div-works">
-                    <div class="section_one_div_works-main"></div>
-                    <div class="section_one_div_works-footer">
-                        <h3 class="section_one_div_works_footer-title">
-                            <span>PetShop</span>
-                            <span class="section_one_div_works_footer_title-subtitle">O melhor para o seu PET</span>
-                        </h3>
+                    <div class="section_one-seconddiv-div align-item-rigth">
+                        <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
                     </div>
-                </div>
+                </section>
 
-                <div class="section_one_div-works">
-                    <div class="section_one_div_works-main"></div>
-                    <div class="section_one_div_works-footer">
-                        <h3 class="section_one_div_works_footer-title">
-                            <span>Projeto</span>
-                            <span class="section_one_div_works_footer_title-subtitle">Adicionar Texto Aqui</span>
-                        </h3>
+                <section class="section_one-seconddiv-container" id="focus">
+                    <div class="section_one-seconddiv-div align-item-left">
+                        <div class="section_one-seconddiv-div-text ">
+                            <h1 class="section_one-seconddiv-div-text-h1">Focus - Conservação de Tartarugas Marinhas</h1>
+                            <p class="section_one-seconddiv-div-text-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao
+                            monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. O projeto é mantido pelo estudante
+                            Neemias Renan, orientado pelo Prof. Me. Pedro Baesse e originalmente desenvolvido no IFRN.</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="section_one_div-works">
-                    <div class="section_one_div_works-main"></div>
-                    <div class="section_one_div_works-footer">
-                        <h3 class="section_one_div_works_footer-title">
-                            <span>Projeto</span>
-                            <span class="section_one_div_works_footer_title-subtitle">Adicionar Texto Aqui</span>
-                        </h3>
+                    <div class="section_one-seconddiv-div align-item-rigth">
+                        <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
                     </div>
-                </div>
-
-                <div class="section_one_div-works">
-                    <div class="section_one_div_works-main"></div>
-                    <div class="section_one_div_works-footer">
-                        <h3 class="section_one_div_works_footer-title">
-                            <span>Projeto</span>
-                            <span class="section_one_div_works_footer_title-subtitle">Adicionar Texto Aqui</span>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="section_one_div-works">
-                    <div class="section_one_div_works-main"></div>
-                    <div class="section_one_div_works-footer">
-                        <h3 class="section_one_div_works_footer-title">
-                            <span>Projeto</span>
-                            <span class="section_one_div_works_footer_title-subtitle">Adicionar Texto Aqui</span>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="section_one_div-works">
-                    <div class="section_one_div_works-main"></div>
-                    <div class="section_one_div_works-footer">
-                        <h3 class="section_one_div_works_footer-title">
-                            <span>Projeto</span>
-                            <span class="section_one_div_works_footer_title-subtitle">Adicionar Texto Aqui</span>
-                        </h3>
-                    </div>
-                </div>
-
+                </section>
             </div>
         </section>
 
