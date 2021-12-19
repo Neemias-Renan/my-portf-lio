@@ -12,12 +12,13 @@ function fecharMenu(){
     document.getElementById("body").style.overflow = "auto"
 }
 
-var projetoAtivo = ""
+var projetoAtivo = 'casco'
 
 function verProjeto(titulo){
+    trocarProjeto()
+    document.getElementById('casco').style.display = 'none'
     projetoAtivo = titulo
     document.getElementById(titulo).style.display = "flex"
-    console.log(projetoAtivo)
 }
 
 

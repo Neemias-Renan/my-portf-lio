@@ -18,8 +18,8 @@
             <nav class="header-middle" id="menu">
                 <ul class="header_middle-ul">
                     <li class="header_middle_ul-li"><a class="a-bold" href="index.html">Início</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="#">Portfólio</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="#">Quem sou Eu?</a></li>
+                    <li class="header_middle_ul-li"><a class="a-bold" href="#portfolio">Portfólio</a></li>
+                    <li class="header_middle_ul-li"><a class="a-bold" href="#quemsoueu">Quem sou Eu?</a></li>
                     <li class="header_middle_ul-li"><a class="a-bold" href="#">Feedback</a></li>
                 </ul>
             </nav>
@@ -33,85 +33,184 @@
 
         <div class="container">
             <h1 class="h1">
-                <span id="h1-span">
-                    Neemias Renan
-                </span>
+                <span id="h1-span">Neemias Renan</span>
             </h1>
             <p class="description">DESENVOLVEDOR DE SOLUÇÕES WEB</p>
         </div>
 
-        <section class="section-one">
-            <p id="section_one-p">Conheça meus trabalhos</p>
+        <a name = 'portfolio'>
+            <section class="section-one">
+                <p id="section_one-p">Conheça meus trabalhos</p>
 
-            <div id="section_one-firstdiv">
-                <div id="cards">
-                    <div class="cards_element background-blue" onmouseover="verProjeto('casco')" onmouseout="trocarProjeto()">
-                        <div class="cards_element-text">
-                            <h3 class="card_element-text-h3">Casco</h3>
-                            <p class="card_element-text-p">Site</p>
-                        </div>                        
-                    </div>
+                <div id="section_one-firstdiv">
+                    <div id="cards">
+                        <div class="cards_element background-blue" onclick="verProjeto('casco')">
+                            <div class="cards_element-text">
+                                <h3 class="card_element-text-h3">Casco</h3>
+                                <p class="card_element-text-p">Site</p>
+                            </div>                        
+                        </div>
 
-                    <div class="cards_element background-red">
-                        <div class="cards_element-text">
-                            <h3 class="card_element-text-h3">Filminho</h3>
-                            <p class="card_element-text-p">Site</p>
-                        </div>                        
-                    </div>
+                        <div class="cards_element background-red" onclick="verProjeto('assiste-ai')" >
+                            <div class="cards_element-text">
+                                <h3 class="card_element-text-h3">Assiste-Ai</h3>
+                                <p class="card_element-text-p">Site</p>
+                            </div>                        
+                        </div>
 
-                    <div class="cards_element background-purple" onmouseover="verProjeto('focus')"  onmouseout="trocarProjeto()">
-                        <div class="cards_element-text">
-                            <h3 class="card_element-text-h3">Focus</h3>
-                            <p class="card_element-text-p">Site</p>
-                        </div>                        
-                    </div>
+                        <div class="cards_element background-purple" onclick="verProjeto('focus')" >
+                            <div class="cards_element-text">
+                                <h3 class="card_element-text-h3">Focus</h3>
+                                <p class="card_element-text-p">Site</p>
+                            </div>                        
+                        </div>
 
-                    <div class="cards_element background-green">
-                        <div class="cards_element-text">
-                            <h3 class="card_element-text-h3">Caixa de Mercadinho</h3>
-                            <p class="card_element-text-p">Site</p>
-                        </div>                        
+                        <div class="cards_element background-green" onclick="verProjeto('caixademercadinho')" >
+                            <div class="cards_element-text">
+                                <h3 class="card_element-text-h3">Caixa de Mercadinho</h3>
+                                <p class="card_element-text-p">Site</p>
+                            </div>                        
+                        </div>
                     </div>
                 </div>
+            
+
+                <div id="section_one-seconddiv">
+
+                    <section class="section_one-seconddiv-container" id="casco">
+                        <div class="section_one-seconddiv-div align-item-left">
+                            <div class="section_one-seconddiv-div-text ">
+                                <h1 class="section_one-seconddiv-div-text-h1">Casco - Conservação de Tartarugas Marinhas</h1>
+                                <p class="section_one-seconddiv-div-text-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao
+                                monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. O projeto é mantido pelo estudante
+                                Neemias Renan, orientado pelo Prof. Me. Pedro Baesse e originalmente desenvolvido no IFRN.</p>
+                            </div>
+                        </div>
+                        <div class="section_one-seconddiv-div align-item-rigth">
+                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
+                        </div>
+                    </section>
+
+                    <section class="section_one-seconddiv-container" id="assiste-ai">
+                        <div class="section_one-seconddiv-div align-item-left">
+                            <div class="section_one-seconddiv-div-text ">
+                                <h1 class="section_one-seconddiv-div-text-h1">Assiste-Ai</h1>
+                                <p class="section_one-seconddiv-div-text-p">O Assiste-Ai é um projeto de uma mini-plataforma de streaming, desenvolvido com o objetivo de testar novas habilidades e descobrir funcionalidades ainda não conhecidas.</p>
+                            </div>
+                        </div>
+                        <div class="section_one-seconddiv-div align-item-rigth">
+                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
+                        </div>
+                    </section>
+
+                    <section class="section_one-seconddiv-container" id="focus">
+                        <div class="section_one-seconddiv-div align-item-left">
+                            <div class="section_one-seconddiv-div-text ">
+                                <h1 class="section_one-seconddiv-div-text-h1">Focus - Gerenciador de Metas</h1>
+                                <p class="section_one-seconddiv-div-text-p">A plataforma (Focus) surgiu em 2021 com o objetivo de auxiliar o usuário a administrar suas metas. Foi desenvolvido no IFRN como projeto final da disciplina de Programação para Internet</p>
+                            </div>
+                        </div>
+                        <div class="section_one-seconddiv-div align-item-rigth">
+                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
+                        </div>
+                    </section>
+
+                    <section class="section_one-seconddiv-container" id="caixademercadinho">
+                        <div class="section_one-seconddiv-div align-item-left">
+                            <div class="section_one-seconddiv-div-text ">
+                                <h1 class="section_one-seconddiv-div-text-h1">Caixa de Mercadinho</h1>
+                                <p class="section_one-seconddiv-div-text-p">A plataforma busca tornar os processos de venda de uma loja que fiz parte, mais ágeis e simples. Ainda está em desenvolvido, mas já tem solucionado grande parte dos problemas encontrados.</p>
+                            </div>
+                        </div>
+                        <div class="section_one-seconddiv-div align-item-rigth">
+                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </a>
+
+
+        <a name = 'quemsoueu'></a>
+        <section class="section_two">
+            <div class="section_two-div" id="section_two-firstdiv">
+                <img id="section-two-div-img_one" src="src/img/texto-apresentacao.svg">
             </div>
+            <div class="section_two-div" id="section_two-twodiv">
+                <img id="section_two-div-img_two" src="src/img/neemias.svg" alt="Neemias Renan">
+            </div>
+            <div class="section_two-div" id="section_two-thirddiv">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="section_two-div-li-a">
+                                    <div class="section_two-div-li-a-div">
+                                        <img class="img_icon-redesocial" src="src/img/icons/instagram.svg">
+                                    </div>
+                                    <p class="section_two-div-li-p">@neemias_renan</p>
+                                </div>
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="#">
+                                <div class="section_two-div-li-a">
+                                    <div class="section_two-div-li-a-div">
+                                        <img class="img_icon-redesocial" src="src/img/icons/linkedin.svg">
+                                    </div>
+                                    <p class="section_two-div-li-p">@neemias_renan</p>
+                                </div>
+                            </a>
+                        </li>
 
-            <div id="section_one-seconddiv">
+                        <li>
+                            <a href="#">
+                                <div class="section_two-div-li-a">
+                                    <div class="section_two-div-li-a-div">
+                                        <img class="img_icon-redesocial" src="src/img/icons/github.svg">
+                                    </div>
+                                    <p class="section_two-div-li-p">@neemias_renan</p>
+                                </div>
+                            </a>
+                        </li>
 
-                <section class="section_one-seconddiv-container" id="casco">
-                    <div class="section_one-seconddiv-div align-item-left">
-                        <div class="section_one-seconddiv-div-text ">
-                            <h1 class="section_one-seconddiv-div-text-h1">Casco - Conservação de Tartarugas Marinhas</h1>
-                            <p class="section_one-seconddiv-div-text-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao
-                            monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. O projeto é mantido pelo estudante
-                            Neemias Renan, orientado pelo Prof. Me. Pedro Baesse e originalmente desenvolvido no IFRN.</p>
-                        </div>
-                    </div>
-                    <div class="section_one-seconddiv-div align-item-rigth">
-                        <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
-                    </div>
-                </section>
+                        <li>
+                            <a href="#">
+                                <div class="section_two-div-li-a">
+                                    <div class="section_two-div-li-a-div">
+                                        <img class="img_icon-redesocial" src="src/img/icons/facebook.svg">
+                                    </div>
+                                    <p class="section_two-div-li-p">@neemias_renan</p>
+                                </div>
+                            </a>
+                        </li>
 
-                <section class="section_one-seconddiv-container" id="focus">
-                    <div class="section_one-seconddiv-div align-item-left">
-                        <div class="section_one-seconddiv-div-text ">
-                            <h1 class="section_one-seconddiv-div-text-h1">Focus - Conservação de Tartarugas Marinhas</h1>
-                            <p class="section_one-seconddiv-div-text-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao
-                            monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. O projeto é mantido pelo estudante
-                            Neemias Renan, orientado pelo Prof. Me. Pedro Baesse e originalmente desenvolvido no IFRN.</p>
-                        </div>
-                    </div>
-                    <div class="section_one-seconddiv-div align-item-rigth">
-                        <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
-                    </div>
-                </section>
+                        <li>
+                            <a href="#">
+                                <div class="section_two-div-li-a">
+                                    <div class="section_two-div-li-a-div">
+                                        <img class="img_icon-redesocial" src="src/img/icons/youtube.svg">
+                                    </div>
+                                    <p class="section_two-div-li-p">@neemias_renan</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
             </div>
         </section>
 
 
+        <section class="section_three">
+            <p id="section_three-p">
+                No ano de 2020, conclui o curso técnico integrado em informática no IFRN Campus de Ceará-Mirim. Atualmente estou cursando o Ensino Superior
+                no IFRN - Natal/Central no curso de Análise e Desenvolvimento de Sistemas. 
+                Sou apaixonado por música e programação, além de amar aprender novas habilidades.
+            </p>
+        </section>
+
         <footer class="footer">
                
-            <h1>PÁGINA EM CONSTRUÇÃO...</h1>
+            <h1 class="footer_h1">Em Construção</h1>
 
         </footer>
 
