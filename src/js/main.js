@@ -26,3 +26,6 @@ function trocarProjeto(){
     document.getElementById(projetoAtivo).style.display = "none"
 }
 
+var currentTime = new Date();
+var year = currentTime.getFullYear()
+document.getElementById('idade').innerHTML = year - 2002;

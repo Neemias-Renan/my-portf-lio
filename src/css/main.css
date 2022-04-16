@@ -112,119 +112,22 @@ a:-webkit-any-link:focus-visible {
 
 .section-one{
     text-align: center;
-    color:white;
+    color: white;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding-top: 1em;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
 }
 
-#section_one-p{
+#section_one-p {
     font-size: 0.65rem;
     letter-spacing: 3.4px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 6em;
-}
-
-#cards{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    gap: 1em;
-
-}
-.cards_element{
-    width: 14em;
-    height: 8em;
-    border-radius: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    
-}
-.cards_element-text{
-    padding-left: 1em;
-    text-align: initial;    
-}
-.card_element-text-p{
-    font-weight: 300;
-    font-size: small;
-}
-
-.card_element-text-h3{
-    font-size: x-large;
-}
-
-.background-blue{
-    background: linear-gradient(180deg, #305CCD -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-.background-blue:hover{
-    background: linear-gradient(180deg, #4674e8 -5%, rgba(0, 0, 0, 0) 80.34%);   
-}
-.background-red{
-    background: linear-gradient(180deg, #CD4330 -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-.background-red:hover{
-    background: linear-gradient(180deg, #e25441 -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-
-.background-purple{
-    background: linear-gradient(180deg, #6230CD -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-.background-purple:hover{
-    background: linear-gradient(180deg, #723de4 -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-
-.background-green{
-    background: linear-gradient(180deg, #127C5C -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-.background-green:hover{
-    background: linear-gradient(180deg, #25ac84 -5%, rgba(0, 0, 0, 0) 80.34%);
-}
-
-
-#section_one-seconddiv{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    gap: 4em;
-}
-
-.section_one-seconddiv-div{
-    width: 50%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 75%;
-}
-
-.section_one-seconddiv-div-text{
-    width: 29em;
-    text-align: left;
-}
-.section_one-seconddiv-div-text-h1{
-    font-size: x-large;
-    margin-bottom: 0.3em;
-}
-.section_one-seconddiv-div-text-p{
-    font-weight:400;
-}
-#screen-casco{
-    width: 30em;
-}
-
-#casco{
-    display: flex;
+    margin-bottom: 1em;
 }
 
 .align-item-left{
@@ -234,10 +137,73 @@ a:-webkit-any-link:focus-visible {
     align-items: flex-start;
 }
 
-.section_one-seconddiv-container{
-    /* display: flex; */
-    display: none;
+.section-one-div {
+    width: 60%;
+    height: 13em;
+    border-radius: 20.438px;
+    display: flex;
+    flex-direction: row;
 }
+.section-one-div:hover{
+    filter: hue-rotate(15deg);
+}
+.purple{
+    background: linear-gradient(180deg, #6800EA 0%, #6C00AE 100%);
+}
+.red{
+    background: linear-gradient(180deg, #EA5151 0%, #C72B2B 100%);
+}
+.blue{
+    background: linear-gradient(180deg, #51B3EA 0%, #2B57C7 100%);
+}
+.section-one-div-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: space-evenly;
+    color: white;
+    padding: 1em 2em;
+    width: 55%;
+}
+.section-one-div-img{
+    width: 40%;
+    border-radius: inherit;
+    background-repeat: no-repeat;
+    background-position-y: initial;
+    background-size: 125%;
+    background-position-x: left;
+}
+.section-one-div-img:hover{
+    background-size: 155%;
+}
+.img1{
+    background-image: url('../img/backgrounds/topview.png');
+}
+.img2{
+    background-image: url('../img/backgrounds/calculaae.png');
+}
+.img3{
+    background-image: url('../img/backgrounds/casco.png');
+}
+
+.section-one-div-div-a{
+    text-decoration: none;
+    color: #bdbdbd;
+    font-size: smaller;
+    font-weight: 700;
+}
+.section-one-div-div-h1{
+    margin: 0;
+}
+
+
+.section-one-div-div-p{
+    margin: 0;
+    font-size: smaller;
+    color: #FFFFFF99;
+}
+
 .section_two-div{
     width: 25%;
     display: flex;
@@ -297,8 +263,43 @@ a:-webkit-any-link:focus-visible {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: flex-end;
     justify-content: center;
+    color: white;
+    align-items: end;
+    margin-top: 3em;
+}
+
+.section_two_div-h1{
+    font-size: 500%;
+    line-height: 0.9em;
+    font-weight: 800;
+    margin-bottom: 0.15em;
+}
+.section_two_div-p-date,.section_two_div-p-t1{
+    font-weight: 300;
+}
+
+.section_two_div-p-t1,#section_three-p{
+    font-size: smaller;
+}
+.section_two_div-span{
+    font-weight: 500;
+}
+.img_perfil{
+    background-image: url('../img/Neemias.png');
+    width: 45%;
+    height: -webkit-fill-available;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 80%;
+}
+
+.section_two_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 7em;
+    margin-right: -4em;
 }
 
 .section_three{
@@ -317,18 +318,60 @@ a:-webkit-any-link:focus-visible {
     font-size: smaller;
 }
 
-.footer{
+.section_four{
     text-align: center;
     color: white;
-    height: 30em;
+    height: 80%;
     margin-top: 0em;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
-
-.footer_h1{
+.section_four_div-h1{
     font-weight: 100;
     font-size: xxx-large;
+    color: #fff;
+}
+
+.section_four_div-email{
+    font-weight: 100;
+    font-size: xx-large;
+    color: #FFFFFF80;
+}
+.section_four_div-email:hover{
+    font-weight: 100;
+    font-size: xx-large;
+    color: #FFFF;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    height: 20%;
+    margin-top: 0em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.footer_p{
+    color: #FFFFFF80;
+    font-size: small;
+    font-weight: 500;
+} 
+.footer_div{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.footer_div-p{
+    color: white;
+    font-weight: 600;
+    font-size: smaller;
+    letter-spacing: 1px;
 }

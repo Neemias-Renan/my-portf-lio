@@ -13,24 +13,13 @@
 <body id="body">
     <div class="wrapper">
         <header class="header">
-            <h1 class="header-left"></h1>
-
             <nav class="header-middle" id="menu">
                 <ul class="header_middle-ul">
                     <li class="header_middle_ul-li"><a class="a-bold" href="index.html">Início</a></li>
                     <li class="header_middle_ul-li"><a class="a-bold" href="#portfolio">Portfólio</a></li>
                     <li class="header_middle_ul-li"><a class="a-bold" href="#quemsoueu">Quem sou Eu?</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="indexenglish.html">Versão em Inglês</a></li>
                 </ul>
             </nav>
-
-
-            <div class="header-right">
-               
-                <img id="BTN_abrirMenu" src="src/img/menu.svg" alt="Abrir Menu" onclick="abrirMenu()" class="header_rigth-img">
-                <img id="BTN_fecharMenu" src="src/img/exit.svg" alt="Fechar Menu" onclick="fecharMenu()"class="header_rigth-img hide">
-            </div>
-
         </header>
 
         <div class="container">
@@ -40,166 +29,69 @@
             <p class="description">DESENVOLVEDOR DE SOLUÇÕES WEB</p>
         </div>
 
-        <a name = 'portfolio'>
+        <a name = 'portfolio'></a>
             <section class="section-one">
                 <p id="section_one-p">Conheça meus trabalhos</p>
-
-                <div id="section_one-firstdiv">
-                    <div id="cards">
-                        <div class="cards_element background-blue" onclick="verProjeto('casco')">
-                            <div class="cards_element-text">
-                                <h3 class="card_element-text-h3">Casco</h3>
-                                <p class="card_element-text-p">Site</p>
-                            </div>                        
+            
+                <div class="section-one-div purple">
+                    <div class="section-one-div-div">
+                        <div>
+                            <h1 class="section-one-div-div-h1">Topview</h1>
+                            <p class="section-one-div-div-p">Projeto Pessoal - Web</p>
                         </div>
+                        <p class="section-one-div-div-p">A idéia do projeto é criar uma plataforma de streaming, que servirá como um indexador de filmes e séries.</p>
+                        <a href="https://github.com/neemias-renan/topview" class="section-one-div-div-a" target="_blank"><p>Visitar</p></a>
+                    </div>
 
-                        <!-- <div class="cards_element background-red" onclick="verProjeto('assiste-ai')" >
-                            <div class="cards_element-text">
-                                <h3 class="card_element-text-h3">Assiste-Ai</h3>
-                                <p class="card_element-text-p">Site</p>
-                            </div>                        
-                        </div>
-
-                        <div class="cards_element background-purple" onclick="verProjeto('focus')" >
-                            <div class="cards_element-text">
-                                <h3 class="card_element-text-h3">Focus</h3>
-                                <p class="card_element-text-p">Site</p>
-                            </div>                        
-                        </div> -->
-
-                        <div class="cards_element background-green" onclick="verProjeto('caixademercadinho')" >
-                            <div class="cards_element-text">
-                                <h3 class="card_element-text-h3">Caixa de Mercadinho</h3>
-                                <p class="card_element-text-p">Site</p>
-                            </div>                        
-                        </div>
+                    <div class="section-one-div-img img1">         
                     </div>
                 </div>
-            
 
-                <div id="section_one-seconddiv">
+                <div class="section-one-div red">
+                    <div class="section-one-div-div">
+                        <div>
+                            <h1 class="section-one-div-div-h1">Calcula.ae</h1>
+                            <p class="section-one-div-div-p">Projeto Pessoal - Web</p>
+                        </div>                        
+                        <p class="section-one-div-div-p">A plataforma Calcula.ae tem como objetivo facilitar a realização dos cálculos referentes as compras realizadas em mercadinhos pequenos.</p>
+                        <a href="https://neemias-renan.github.io/calcula.ae/" class="section-one-div-div-a" target="_blank"><p>Visitar</p></a>
+                    </div>
 
-                    <section class="section_one-seconddiv-container" id="casco">
-                        <div class="section_one-seconddiv-div align-item-left">
-                            <div class="section_one-seconddiv-div-text ">
-                                <h1 class="section_one-seconddiv-div-text-h1">Casco - Conservação de Tartarugas Marinhas</h1>
-                                <p class="section_one-seconddiv-div-text-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao
-                                monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. O projeto é mantido pelo estudante
-                                Neemias Renan, orientado pelo Prof. Me. Pedro Baesse e originalmente desenvolvido no IFRN.</p>
-                            </div>
-                        </div>
-                        <div class="section_one-seconddiv-div align-item-rigth">
-                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
-                        </div>
-                    </section>
-
-                    <!-- <section class="section_one-seconddiv-container" id="assiste-ai">
-                        <div class="section_one-seconddiv-div align-item-left">
-                            <div class="section_one-seconddiv-div-text ">
-                                <h1 class="section_one-seconddiv-div-text-h1">Assiste-Ai</h1>
-                                <p class="section_one-seconddiv-div-text-p">O Assiste-Ai é um projeto de uma mini-plataforma de streaming, desenvolvido com o objetivo de testar novas habilidades e descobrir funcionalidades ainda não conhecidas.</p>
-                            </div>
-                        </div>
-                        <div class="section_one-seconddiv-div align-item-rigth">
-                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
-                        </div>
-                    </section> -->
-
-                    <!-- <section class="section_one-seconddiv-container" id="focus">
-                        <div class="section_one-seconddiv-div align-item-left">
-                            <div class="section_one-seconddiv-div-text ">
-                                <h1 class="section_one-seconddiv-div-text-h1">Focus - Gerenciador de Metas</h1>
-                                <p class="section_one-seconddiv-div-text-p">A plataforma (Focus) surgiu em 2021 com o objetivo de auxiliar o usuário a administrar suas metas. Foi desenvolvido no IFRN como projeto final da disciplina de Programação para Internet</p>
-                            </div>
-                        </div>
-                        <div class="section_one-seconddiv-div align-item-rigth">
-                            <img id="screen-casco" src="src/img/casco.svg" alt="Tela inicial do Casco">
-                        </div>
-                    </section> -->
-
-                    <section class="section_one-seconddiv-container" id="caixademercadinho">
-                        <div class="section_one-seconddiv-div align-item-left">
-                            <div class="section_one-seconddiv-div-text ">
-                                <h1 class="section_one-seconddiv-div-text-h1">Caixa de Mercadinho</h1>
-                                <p class="section_one-seconddiv-div-text-p">A plataforma busca tornar os processos de venda de uma loja que fiz parte, mais ágeis e simples. Ainda está em desenvolvido, mas já tem solucionado grande parte dos problemas encontrados.</p>
-                            </div>
-                        </div>
-                        <div class="section_one-seconddiv-div align-item-rigth">
-                            <img id="screen-casco" src="src/img/mercadinho.svg" alt="Tela inicial do Caixa de Mercadinho">
-                        </div>
-                    </section>
+                    <div class="section-one-div-img img2">         
+                    </div>
                 </div>
+
+                <div class="section-one-div blue">
+                    <div class="section-one-div-div">
+                        <div>
+                            <h1 class="section-one-div-div-h1">Casco</h1>
+                            <p class="section-one-div-div-p">APC Cabo de São Roque - Web</p>
+                        </div>
+                        <p class="section-one-div-div-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. </p>
+                        <a href="https://github.com/neemias-renan/projeto-casco" class="section-one-div-div-a" target="_blank"><p>Visitar</p></a>
+                    </div>
+
+                    <div class="section-one-div-img img3">         
+                    </div>
+                </div>
+
             </section>
-        </a>
+        
 
 
         <a name = 'quemsoueu'></a>
         <section class="section_two">
-            <div class="section_two-div" id="section_two-firstdiv">
-                <img id="section-two-div-img_one" src="src/img/texto-apresentacao.svg">
+            <div class="section_two_div">
+                <p class="section_two_div-p-t1">Quem sou eu?</p>
+                <h1 class="section_two_div-h1">NEEMIAS<br/> RENAN</h1>
+                <p class="section_two_div-p">Desenvolvedor Web</p>
+                <p class="section_two_div-p-date">04 de Abril de 2002 (<span id="idade" class="section_two_div-span"></span><span class="section_two_div-span"> anos</span>)</p>
+                <p class="section_two_div-p">Natal, RN</p>
             </div>
-            <div class="section_two-div" id="section_two-twodiv">
-                <img id="section_two-div-img_two" src="src/img/neemias.svg" alt="Neemias Renan">
+
+            <div class="img_perfil">
             </div>
-            <div class="section_two-div" id="section_two-thirddiv">
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/neemias.renan/">
-                                <div class="section_two-div-li-a">
-                                    <div class="section_two-div-li-a-div">
-                                        <img class="img_icon-redesocial" src="src/img/icons/instagram.svg">
-                                    </div>
-                                    <p class="section_two-div-li-p">@neemias.renan</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.linkedin.com/in/neemias-renan/">
-                                <div class="section_two-div-li-a">
-                                    <div class="section_two-div-li-a-div">
-                                        <img class="img_icon-redesocial" src="src/img/icons/linkedin.svg">
-                                    </div>
-                                    <p class="section_two-div-li-p">@neemias-renan</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://github.com/Neemias-Renan">
-                                <div class="section_two-div-li-a">
-                                    <div class="section_two-div-li-a-div">
-                                        <img class="img_icon-redesocial" src="src/img/icons/github.svg">
-                                    </div>
-                                    <p class="section_two-div-li-p">@neemias-renan</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.facebook.com/neemiasrenan.santosoliveira/">
-                                <div class="section_two-div-li-a">
-                                    <div class="section_two-div-li-a-div">
-                                        <img class="img_icon-redesocial" src="src/img/icons/facebook.svg">
-                                    </div>
-                                    <p class="section_two-div-li-p">@NeemiasRenan</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.youtube.com/channel/UC7tA82I50dBcQacadUFMYeQ/featured">
-                                <div class="section_two-div-li-a">
-                                    <div class="section_two-div-li-a-div">
-                                        <img class="img_icon-redesocial" src="src/img/icons/youtube.svg">
-                                    </div>
-                                    <p class="section_two-div-li-p">@neemiasrenan</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-            </div>
-        </section>
+        </section> 
 
 
         <section class="section_three">
@@ -210,9 +102,20 @@
             </p>
         </section>
 
+        <section class="section_four">
+            <div class="section_four_div">
+                <h1 class="section_four_div-h1">ENTRE EM CONTATO</h1>
+                <h1 class="section_four_div-email">neemias.re@gmail.com</h1>
+            </div>
+        </section>
         <footer class="footer">
-               
-            <h1 class="footer_h1">Em Construção</h1>
+            <p class="footer_p">REDES SOCIAIS</p>
+            <div class="footer_div">
+                <a href="https://www.facebook.com/neemiasrenan.santosoliveira" target="_blank"><p class="footer_div-p">FACEBOOK</p></a>
+                <a href="https://www.instagram.com/neemias.renan" target="_blank"><p class="footer_div-p">INSTAGRAM</p></a>
+                <a href="https://github.com/neemias-renan" target="_blank"><p class="footer_div-p">GITHUB</p></a>
+                <a href="https://www.linkedin.com/in/neemias-renan/?originalSubdomain=br" target="_blank"><p class="footer_div-p">LINKEDIN</p></a>
+            </div>
 
         </footer>
 
