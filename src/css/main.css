@@ -156,6 +156,9 @@ a:-webkit-any-link:focus-visible {
 .blue{
     background: linear-gradient(180deg, #51B3EA 0%, #2B57C7 100%);
 }
+.green{
+    background: linear-gradient(180deg, #36b740 0%, #06480d 100%);
+}
 .section-one-div-div{
     display: flex;
     flex-direction: column;
