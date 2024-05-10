@@ -1,125 +1,297 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Neemias Renan</title>
-    <meta name="description" content="Conheça meus trabalhos.">
-    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='src/css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='src/css/responsive-main.css'>
-</head>
-<body id="body">
-    <div class="wrapper">
-        <header class="header">
-            <nav class="header-middle" id="menu">
-                <ul class="header_middle-ul">
-                    <li class="header_middle_ul-li"><a class="a-bold" href="index.html">Início</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="#portfolio">Portfólio</a></li>
-                    <li class="header_middle_ul-li"><a class="a-bold" href="#quemsoueu">Quem sou Eu?</a></li>
-                </ul>
-            </nav>
-        </header>
+<html lang="pt-br">
 
-        <div class="container">
-            <h1 class="h1">
-                <span id="h1-span">Neemias Renan</span>
-            </h1>
-            <p class="description">DESENVOLVEDOR DE SOLUÇÕES WEB</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neemias Renan</title>
+  <link rel="icon" type="image/x-icon" href="src/ico/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="transition-all">
+  <header>
+    <nav class="bg-zinc-950 border-gray-200 px-4 lg:px-6 py-8">
+      <div class="flex flex-wrap justify-between items-center mx-auto  mx-auto max-w-7xl">
+        <a href="#" class="flex items-center">
+          <img src="src/img/resources/logo.svg" class="mr-3 h-10" alt="Neemias Renan." />
+        </a>
+        <div class="flex items-center lg:order-2 lg:hidden">
+          <button data-collapse-toggle="mobile-menu-2" type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </div>
 
-        <a name = 'portfolio'></a>
-            <section class="section-one">
-                <p id="section_one-p">Conheça meus trabalhos</p>
-            
-                <div class="section-one-div green">
-                    <div class="section-one-div-div">
-                        <div>
-                            <h1 class="section-one-div-div-h1">Topview</h1>
-                            <p class="section-one-div-div-p">Projeto Pessoal - Web</p>
-                        </div>
-                        <p class="section-one-div-div-p">A idéia do projeto é criar uma plataforma de streaming, que servirá como um indexador de filmes e séries.</p>
-                        <a href="https://neemias-renan.github.io/topview" class="section-one-div-div-a" target="_blank"><p>Visitar</p></a>
-                    </div>
+        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <li>
+              <a href="#"
+                class="block py-4 pr-4 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Início</a>
+            </li>
+            <li>
+              <a href="#trabalhos"
+                class="block py-2 pr-2 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Trabalhos</a>
+            </li>
+            <li>
+              <a href="#sobre"
+                class="block py-2 pr-2 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                    <div class="section-one-div-img img1">         
-                    </div>
-                </div>
-
-                <div class="section-one-div red">
-                    <div class="section-one-div-div">
-                        <div>
-                            <h1 class="section-one-div-div-h1">Calcula.ae</h1>
-                            <p class="section-one-div-div-p">Projeto Pessoal - Web</p>
-                        </div>                        
-                        <p class="section-one-div-div-p">A plataforma Calcula.ae tem como objetivo facilitar a realização dos cálculos referentes as compras realizadas em mercadinhos pequenos.</p>
-                        <a href="https://neemias-renan.github.io/calcula.ae/" class="section-one-div-div-a" target="_blank"><p>Visitar</p></a>
-                    </div>
-
-                    <div class="section-one-div-img img2">         
-                    </div>
-                </div>
-
-                <div class="section-one-div blue">
-                    <div class="section-one-div-div">
-                        <div>
-                            <h1 class="section-one-div-div-h1">Casco</h1>
-                            <p class="section-one-div-div-p">APC Cabo de São Roque - Web</p>
-                        </div>
-                        <p class="section-one-div-div-p">A plataforma (Casco) surgiu em 2020 com o objetivo de auxiliar biólogos ao monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas. </p>
-                        <a href="https://github.com/neemias-renan/projeto-casco" class="section-one-div-div-a" target="_blank"><p>Visitar</p></a>
-                    </div>
-
-                    <div class="section-one-div-img img3">         
-                    </div>
-                </div>
-
-            </section>
-        
-
-
-        <a name = 'quemsoueu'></a>
-        <section class="section_two">
-            <div class="section_two_div">
-                <p class="section_two_div-p-t1">Quem sou eu?</p>
-                <h1 class="section_two_div-h1">NEEMIAS<br/> RENAN</h1>
-                <p class="section_two_div-p">Desenvolvedor Web</p>
-                <p class="section_two_div-p-date">04 de Abril de 2002 (<span id="idade" class="section_two_div-span"></span><span class="section_two_div-span"> anos</span>)</p>
-                <p class="section_two_div-p">Natal, RN</p>
-            </div>
-
-            <div class="img_perfil">
-            </div>
-        </section> 
-
-
-        <section class="section_three">
-            <p id="section_three-p">
-                No ano de 2020, conclui o curso técnico integrado em informática no IFRN Campus de Ceará-Mirim. Atualmente estou cursando o Ensino Superior
-                no IFRN - Natal/Central no curso de Análise e Desenvolvimento de Sistemas. 
-                Sou apaixonado por música e programação, além de amar aprender novas habilidades.
-            </p>
-        </section>
-
-        <section class="section_four">
-            <div class="section_four_div">
-                <h1 class="section_four_div-h1">ENTRE EM CONTATO</h1>
-                <h1 class="section_four_div-email">neemias.re@gmail.com</h1>
-            </div>
-        </section>
-        <footer class="footer">
-            <p class="footer_p">REDES SOCIAIS</p>
-            <div class="footer_div">
-                <a href="https://www.facebook.com/neemiasrenan.santosoliveira" target="_blank"><p class="footer_div-p">FACEBOOK</p></a>
-                <a href="https://www.instagram.com/neemias.renan" target="_blank"><p class="footer_div-p">INSTAGRAM</p></a>
-                <a href="https://github.com/neemias-renan" target="_blank"><p class="footer_div-p">GITHUB</p></a>
-                <a href="https://www.linkedin.com/in/neemias-renan/?originalSubdomain=br" target="_blank"><p class="footer_div-p">LINKEDIN</p></a>
-            </div>
-
-        </footer>
-
+  <section class="bg-zinc-950">
+    <div class="mx-auto max-w-7xl flex justify-center" style="height: 80vh;">
+      <div class="mr-auto place-self-center lg:col-span-7">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Desenvolvedor de Soluções Web</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          Transformando Ideias em Realidade. Criando Experiências que Marcam a Memória do Usuário.</p>
+        <a href="mailto:neemiasrenan2015@gmail.com"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+          Fale com o Desenvolvedor
+        </a>
+      </div>
     </div>
-    <script src='src/js/main.js'></script>
+  </section>
+
+  <section id="trabalhos">
+    <div class="bg-white pt-24 sm:pt-32">
+      <div class="mx-auto max-w-7xl ">
+        <div class="mx-auto lg:mx-0">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Trabalhos</h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">Explore minhas criações: descubra meus trabalhos e projetos.
+          </p>
+        </div>
+
+        <div
+          class="mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 border-t border-b border-gray-200 pt-10 pb-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <!-- More posts... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-white pt-24 sm:pt-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Recursos que tenho estudado e aplicado em
+          meus projetos.</h2>
+        <div
+          class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="src/img/resources/django.png"
+            alt="django" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="src/img/resources/vuejs.png"
+            alt="vuejs" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="src/img/resources/sass.png"
+            alt="sass" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="src/img/resources/bootstrap.png"
+            alt="bootstrap" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="src/img/resources/tailwind.png"
+            alt="tailwind" width="158" height="48">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8" id="sobre">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl">
+      <figure class="mt-10">
+        <blockquote class="text-center text-xl font-semibold leading-7 text-gray-900">
+          <p>Em 2020, finalizei o curso técnico integrado em Informática no IFRN Campus de Ceará-Mirim. Atualmente,
+            estou cursando Ensino Superior no IFRN - Natal/Central, no curso de Análise e Desenvolvimento de Sistemas.
+            Tenho uma paixão especial por desenvolvimento web, pois adoro criar soluções que resolvem problemas e
+            inovam, sempre com foco em proporcionar a melhor experiência para os usuários.</p>
+        </blockquote>
+        <figcaption class="mt-10">
+          <img class="mx-auto h-10 w-10 rounded-full" src="src/img/user/user.jpg" alt="">
+          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+            <div class="font-semibold text-gray-900">Neemias Renan</div>
+            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="text-gray-600">Desenvolvedor Web</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <footer class="mt-36 p-8 pt-24 bg-zinc-950">
+    <div class="mx-auto max-w-screen-xl">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="#" class="flex items-center">
+            <img src="src/img/resources/logo.svg" class="mr-3 h-20" alt="Neemias Renan." />
+          </a>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© Neemias Renan. Todos os direitos
+          reservados.
+        </span>
+        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <a href="https://www.facebook.com/neemiasrenan.santosoliveira"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/neemias.renan/"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://github.com/neemias-renan" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script>
+    // Dados dos artigos
+    const articlesData = [
+      {
+        imgSrc: "src/img/covers/casco.png",
+        imgAlt: "casco",
+        date: "2020",
+        category: "Projeto",
+        title: "Casco - Conservação e Proteção de Tartarugas Marinhas",
+        description: "A plataforma (Casco) foi criada com o objetivo de auxiliar biólogos no monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas."
+      },
+      {
+        imgSrc: "src/img/covers/calculaae.png",
+        imgAlt: "Calcula Ae",
+        date: "2022",
+        category: "Diversão",
+        title: "Calcula.Ae",
+        description: "A plataforma Calcula Ae foi desenvolvida com o propósito de simplificar os cálculos relacionados às compras efetuadas em pequenos mercados."
+      },
+      {
+        imgSrc: "src/img/covers/keyboard.png",
+        imgAlt: "Keyboard Online",
+        date: "2022",
+        category: "Diversão",
+        title: "Site Interativo de Teclado",
+        description: "Desenvolvi um site interativo de teclado para aprimorar minhas habilidades em HTML, CSS e JavaScript, construindo-o para um aprendizado mais prático e profundo."
+      },
+      {
+        imgSrc: "src/img/covers/bosquenc.png",
+        imgAlt: "bosque nivaldo calixto",
+        date: "2023",
+        category: "Projeto",
+        title: "Site Web para o Bosque Professor Nivaldo Calixto",
+        description: "Participei do desenvolvimento do site para o Bosque Professor Nivaldo Calixto, situado no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)."
+      },
+      {
+        imgSrc: "src/img/covers/refeitoriocnat.png",
+        imgAlt: "Refeitorio Cnat",
+        date: "2024",
+        category: "Projeto",
+        title: "Refeitório CNAT - Controle de Lanches",
+        description: "O projeto visa desenvolver um sistema para gerenciar o acesso dos alunos ao refeitório durante o horário do lanche, com controle preciso das entradas e gestão eficiente dos recursos alimentícios."
+      }
+    ];
+
+    // Função para criar um elemento article com base nos dados fornecidos
+    function createArticle(articleData) {
+      const article = document.createElement('article');
+      article.classList.add('flex', 'w-full', 'flex-col', 'items-start', 'justify-between', 'gap-0');
+
+      // Adicionando a imagem
+      const img = document.createElement('img');
+      img.src = articleData.imgSrc;
+      img.alt = articleData.imgAlt;
+      img.classList.add('rounded-lg', 'mb-4', 'h-52', 'w-full', 'object-cover');
+      article.appendChild(img);
+
+      // Adicionando a data e categoria
+      const infoContainer = document.createElement('div');
+      infoContainer.classList.add('flex', 'items-center', 'gap-x-4', 'text-xs');
+
+      const time = document.createElement('time');
+      time.datetime = articleData.date;
+      time.textContent = articleData.date;
+      time.classList.add('text-gray-500');
+      infoContainer.appendChild(time);
+
+      const categoryLink = document.createElement('button');
+      categoryLink.textContent = articleData.category;
+      categoryLink.classList.add('relative', 'z-10', 'rounded-full', 'bg-gray-50', 'px-3', 'py-1.5', 'font-medium', 'text-gray-600', 'hover:bg-gray-100');
+      infoContainer.appendChild(categoryLink);
+
+      article.appendChild(infoContainer);
+
+      // Adicionando o título e descrição
+      const textContainer = document.createElement('div');
+      textContainer.classList.add('group', 'relative');
+
+      const title = document.createElement('h3');
+      title.textContent = articleData.title;
+      title.classList.add('mt-3', 'text-lg', 'font-semibold', 'leading-6', 'text-gray-900', 'group-hover:text-gray-600');
+
+      const titleLink = document.createElement('span');
+      titleLink.appendChild(title);
+
+      textContainer.appendChild(titleLink);
+
+      const description = document.createElement('p');
+      description.textContent = articleData.description;
+      description.classList.add('mt-5', 'line-clamp-4', 'text-sm', 'leading-6', 'text-gray-600');
+
+      textContainer.appendChild(description);
+
+      article.appendChild(textContainer);
+
+      return article;
+    }
+
+    // Função para adicionar os artigos à página
+    function addArticlesToPage() {
+      const articlesContainer = document.querySelector('.mx-auto .grid');
+      articlesData.forEach(articleData => {
+        const article = createArticle(articleData);
+        articlesContainer.appendChild(article);
+      });
+    }
+
+    // Chamando a função para adicionar os artigos à página quando o DOM estiver pronto
+    document.addEventListener('DOMContentLoaded', addArticlesToPage);
+
+  </script>
 </body>
+
 </html>
