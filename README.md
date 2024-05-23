@@ -1,8 +1,9 @@
-<img src="src/img/Capa.png">
+# Portfólio
+Bem-vindo ao repositório do meu portfólio! Este projeto é uma página de portfólio desenvolvida utilizando Tailwind CSS, uma estrutura CSS moderna e altamente customizável.
 
-## 🎨 | Protótipos e Design
+## Visão Geral
+Este projeto tem como objetivo apresentar meus trabalhos, habilidades e experiências de uma maneira visualmente atraente e fácil de navegar. A página é totalmente responsiva e otimizada para diferentes dispositivos.
 
-Todo o planejamento do frontend estão sendo desenvolvidos utilizando o Figma.<br>
-
-➡ <a href="https://www.figma.com/proto/TrH3xvZziD4HrE8Gg4YyA7/Projeto-do-meu-Portf%C3%B3lio?node-id=2%3A2&scaling=scale-down-width&page-id=0%3A1">Veja agora no Figma</a><br>
-➡ <a href="https://neemias-renan.github.io/portfolio/">Abrir Página</a>
+## Tecnologias Utilizadas
+- HTML5: Para a estrutura da página.
+- Tailwind CSS: Para estilização e design responsivo.
