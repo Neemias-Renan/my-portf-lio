@@ -211,7 +211,8 @@
         date: "2020",
         category: "Projeto",
         title: "Casco - Conservação e Proteção de Tartarugas Marinhas",
-        description: "A plataforma (Casco) foi criada com o objetivo de auxiliar biólogos no monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas."
+        description: "A plataforma (Casco) foi criada com o objetivo de auxiliar biólogos no monitoramento de tartarugas marinhas e disponibilizar os dados coletados para futuras pesquisas científicas.",
+        link: "https://github.com/neemias-renan/casco-app"
       },
       {
         imgSrc: "src/img/covers/calculaae.png",
@@ -219,7 +220,8 @@
         date: "2022",
         category: "Diversão",
         title: "Calcula.Ae",
-        description: "A plataforma Calcula Ae foi desenvolvida com o propósito de simplificar os cálculos relacionados às compras efetuadas em pequenos mercados."
+        description: "A plataforma Calcula Ae foi desenvolvida com o propósito de simplificar os cálculos relacionados às compras efetuadas em pequenos mercados.",
+        link: "https://neemias-renan.github.io/calcula.ae/"
       },
       {
         imgSrc: "src/img/covers/keyboard.png",
@@ -227,7 +229,26 @@
         date: "2022",
         category: "Diversão",
         title: "Site Interativo de Teclado",
-        description: "Desenvolvi um site interativo de teclado para aprimorar minhas habilidades em HTML, CSS e JavaScript, construindo-o para um aprendizado mais prático e profundo."
+        description: "Desenvolvi um site interativo de teclado para aprimorar minhas habilidades em HTML, CSS e JavaScript, construindo-o para um aprendizado mais prático e profundo.",
+        link: "https://neemias-renan.github.io/keyboard/",
+      },
+      {
+        imgSrc: "src/img/covers/doctorcare.png",
+        imgAlt: "Doctor Care",
+        date: "2022",
+        category: "Diversão",
+        title: "Doctor Care",
+        description: "O Doctor Care é uma Landing page desenvolvida com base no projeto da NLW Return (Next Level Week) da 🚀 Rocketseat.",
+        link: "https://neemias-renan.github.io/doctorcare/",
+      },
+      {
+        imgSrc: "src/img/covers/calculadora.png",
+        imgAlt: "Calculadora Simples",
+        date: "2022",
+        category: "Diversão",
+        title: "Calculadora Interativa Online",
+        description: "Desenvolvi um site de calculadora interativa para aprimorar minhas habilidades em HTML, CSS e JavaScript, transformando o aprendizado teórico em uma experiência prática.",
+        link: "https://neemias-renan.github.io/calculadora/"
       },
       {
         imgSrc: "src/img/covers/bosquenc.png",
@@ -235,7 +256,8 @@
         date: "2023",
         category: "Projeto",
         title: "Site Web para o Bosque Professor Nivaldo Calixto",
-        description: "Participei do desenvolvimento do site para o Bosque Professor Nivaldo Calixto, situado no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)."
+        description: "Participei do desenvolvimento do site para o Bosque Professor Nivaldo Calixto, situado no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN).",
+        link: "#"
       },
       {
         imgSrc: "src/img/covers/refeitoriocnat.png",
@@ -243,7 +265,8 @@
         date: "2024",
         category: "Projeto",
         title: "Refeitório CNAT - Controle de Lanches",
-        description: "O projeto visa desenvolver um sistema para gerenciar o acesso dos alunos ao refeitório durante o horário do lanche, com controle preciso das entradas e gestão eficiente dos recursos alimentícios."
+        description: "O projeto visa desenvolver um sistema para gerenciar o acesso dos alunos ao refeitório durante o horário do lanche, com controle preciso das entradas e gestão eficiente dos recursos alimentícios.",
+        link: "#"
       }
     ];
 
@@ -252,12 +275,18 @@
       const article = document.createElement('article');
       article.classList.add('flex', 'w-full', 'flex-col', 'items-start', 'justify-between', 'gap-0');
 
+      // Criando o link
+      const articleLink = document.createElement('a');
+      articleLink.href = articleData.link;
+      articleLink.target = "_blank"; 
+      articleLink.classList.add('block', 'w-full');
+
       // Adicionando a imagem
       const img = document.createElement('img');
       img.src = articleData.imgSrc;
       img.alt = articleData.imgAlt;
       img.classList.add('rounded-lg', 'mb-4', 'h-52', 'w-full', 'object-cover');
-      article.appendChild(img);
+      articleLink.appendChild(img);
 
       // Adicionando a data e categoria
       const infoContainer = document.createElement('div');
@@ -269,12 +298,12 @@
       time.classList.add('text-gray-500');
       infoContainer.appendChild(time);
 
-      const categoryLink = document.createElement('button');
-      categoryLink.textContent = articleData.category;
-      categoryLink.classList.add('relative', 'z-10', 'rounded-full', 'bg-gray-50', 'px-3', 'py-1.5', 'font-medium', 'text-gray-600', 'hover:bg-gray-100');
-      infoContainer.appendChild(categoryLink);
+      const categorySpan = document.createElement('span');
+      categorySpan.textContent = articleData.category;
+      categorySpan.classList.add('relative', 'z-10', 'rounded-full', 'bg-gray-50', 'px-3', 'py-1.5', 'font-medium', 'text-gray-600');
+      infoContainer.appendChild(categorySpan);
 
-      article.appendChild(infoContainer);
+      articleLink.appendChild(infoContainer);
 
       // Adicionando o título e descrição
       const textContainer = document.createElement('div');
@@ -284,10 +313,11 @@
       title.textContent = articleData.title;
       title.classList.add('mt-3', 'text-lg', 'font-semibold', 'leading-6', 'text-gray-900', 'group-hover:text-gray-600');
 
-      const titleLink = document.createElement('span');
-      titleLink.appendChild(title);
+      const titleSpan = document.createElement('span');
+      titleSpan.classList.add('absolute', 'inset-0');
+      title.appendChild(titleSpan);
 
-      textContainer.appendChild(titleLink);
+      textContainer.appendChild(title);
 
       const description = document.createElement('p');
       description.textContent = articleData.description;
@@ -295,7 +325,9 @@
 
       textContainer.appendChild(description);
 
-      article.appendChild(textContainer);
+      articleLink.appendChild(textContainer);
+
+      article.appendChild(articleLink);
 
       return article;
     }
@@ -311,7 +343,6 @@
 
     // Chamando a função para adicionar os artigos à página quando o DOM estiver pronto
     document.addEventListener('DOMContentLoaded', addArticlesToPage);
-
   </script>
 </body>
 
